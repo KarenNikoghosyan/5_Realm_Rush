@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.43674535, g: 0.4843592, b: 0.5646104, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: a3eeea4b26a058f4db1f64cefc1b9023,
+  m_LightingDataAsset: {fileID: 112000000, guid: f0c10753d6a6cc84bae5d37f3a630528,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -387,10 +387,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 889467280, guid: 71350e909a06f0c448eeac132921ce69, type: 3}
-      propertyPath: gridSize
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 1137454152574851046, guid: 71350e909a06f0c448eeac132921ce69,
         type: 3}
       propertyPath: m_LocalPosition.x
