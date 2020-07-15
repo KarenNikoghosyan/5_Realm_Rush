@@ -6,6 +6,9 @@ using UnityEngine;
 public class Pathfinder : MonoBehaviour
 {
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
+    Queue<Waypoint> queue = new Queue<Waypoint>();
+    [SerializeField] bool isRunning = true;
+
     [SerializeField] Waypoint startWaypoint, endWaypoint;
     Vector2Int[] directions =
     {
@@ -20,7 +23,29 @@ public class Pathfinder : MonoBehaviour
     {
         LoadBlocks();
         ColorStartAndEnd();
-        ExploreNeighbours();
+        PathFind();
+        //ExploreNeighbours();
+    }
+
+    private void PathFind()
+    {
+            queue.Enqueue(startWaypoint);
+            while (queue.Count > 0)
+            {
+                var searchCenter = queue.Dequeue();
+                print("Searching from: " + searchCenter);
+                HaltIfEndFound(searchCenter);
+            }
+        print("Finished pathfinding?");
+    }
+
+    private void HaltIfEndFound(Waypoint searchCenter)
+    {
+        if(searchCenter == endWaypoint)
+        {
+            print("Searching from end node, therefore stopping");
+            isRunning = false;
+        }
     }
 
     private void ExploreNeighbours()
