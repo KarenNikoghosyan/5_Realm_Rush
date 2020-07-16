@@ -420,8 +420,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isRunning: 1
-  startWaypoint: {fileID: 839160512}
-  endWaypoint: {fileID: 839160512}
+  startWaypoint: {fileID: 1417976781}
+  endWaypoint: {fileID: 959523661}
 --- !u!1001 &410681734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -830,11 +830,11 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 742591016}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &839160512 stripped
+--- !u!114 &959523661 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1888960783848938737, guid: 71350e909a06f0c448eeac132921ce69,
     type: 3}
-  m_PrefabInstance: {fileID: 2095699748}
+  m_PrefabInstance: {fileID: 1723174260}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
