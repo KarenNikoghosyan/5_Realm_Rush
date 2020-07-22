@@ -10,7 +10,7 @@ public class CubeEditor : MonoBehaviour
 
     void Awake()
     {
-        waypoint = GetComponent<Waypoint>();    
+        waypoint = GetComponent<Waypoint>();
     }
 
     // Update is called once per frame
