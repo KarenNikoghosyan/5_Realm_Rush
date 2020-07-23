@@ -7,13 +7,13 @@ public class EnemyDamage : MonoBehaviour
 {
     [SerializeField] GameObject deathFx;
     [SerializeField] Transform parent;
-    [SerializeField] int hits = 5;
+    [SerializeField] int hitPoints = 5;
 
 
     private void OnParticleCollision(GameObject other)
     {
         ProcessHits();
-        if(hits <= 0)
+        if(hitPoints <= 0)
         {
             EnemyKill();
         }
@@ -21,7 +21,7 @@ public class EnemyDamage : MonoBehaviour
 
     private void ProcessHits()
     {
-        hits--;
+        hitPoints--;
     }
 
     private void EnemyKill()
