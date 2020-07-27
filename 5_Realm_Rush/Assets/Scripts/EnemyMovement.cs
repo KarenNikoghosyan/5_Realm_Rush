@@ -26,9 +26,4 @@ public class EnemyMovement : MonoBehaviour
         print("Ending patrol...");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
 }

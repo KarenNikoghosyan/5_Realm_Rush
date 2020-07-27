@@ -1,27 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class Waypoint : MonoBehaviour
 {
-    [SerializeField] public Color exploredColor;
-
     public bool isExplored = false;
     public Waypoint exploredFrom;
 
-    Vector2Int gridPos;
+    //Vector2Int gridPos;
     const int gridSize = 10;
-    void Update()
-    {
-        if (isExplored)
-        {
-            SetTopColor(exploredColor);
-        }
-        else
-        {
-            // do nothing
-        }
-    }
 
     public int GetGridSize()
     {
@@ -35,10 +23,10 @@ public class Waypoint : MonoBehaviour
             Mathf.RoundToInt(transform.position.z / gridSize)
             );
     }
-    public void SetTopColor(Color color)
+ 
+    private void OnMouseOver()
     {
-        MeshRenderer topMeshRenderer = transform.Find("Top").GetComponent<MeshRenderer>();
-        topMeshRenderer.material.color = color;
+        print(gameObject.name);
     }
 
 }
