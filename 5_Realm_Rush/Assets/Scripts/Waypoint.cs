@@ -9,6 +9,9 @@ public class Waypoint : MonoBehaviour
     public Waypoint exploredFrom;
     public bool isPlaceable = true;
 
+    [SerializeField] Tower towerPrefab;
+    [SerializeField] Transform parent;
+
     //Vector2Int gridPos;
     const int gridSize = 10;
 
@@ -31,7 +34,9 @@ public class Waypoint : MonoBehaviour
         {
             if (isPlaceable == true)
             {
-                print(gameObject.name + " Tower placement");
+                    var towerSpawn = Instantiate(towerPrefab, transform.position, Quaternion.identity);
+                    towerSpawn.transform.parent = parent;
+                    isPlaceable = false;
             }
             else
             {
