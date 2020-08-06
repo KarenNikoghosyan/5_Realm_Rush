@@ -7,10 +7,14 @@ using Vector3 = UnityEngine.Vector3;
 
 public class Tower : MonoBehaviour
 {
+    // Parameteres of each tower
     [SerializeField] Transform objectToPan;
     [SerializeField] float attackRange = 45f;
     [SerializeField] ParticleSystem projectileParticle;
 
+    public Waypoint baseWaypoint; // What the tower is standing on
+
+    // State of each tower
     Transform targetEnemy;
 
     // Update is called once per frame
