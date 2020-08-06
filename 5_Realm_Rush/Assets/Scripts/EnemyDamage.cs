@@ -28,7 +28,7 @@ public class EnemyDamage : MonoBehaviour
     private void EnemyKill()
     {
         ParticleSystem fx = Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
-        fx.transform.parent = GameObject.Find("Spawned On Runtime").transform;
+        fx.transform.parent = GameObject.Find("Spawned On Death").transform;
         fx.Play();
         Destroy(gameObject);
     }
