@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65febe2cfa1cbc5438c6e471be4ab5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPeriod: 1
+  movementPeriod: 0.5
   goalParticle: {fileID: 198537984209914932, guid: 1a51bfda454239a41afb7dee687c6ac0,
     type: 3}
 --- !u!114 &8603994065696437587
@@ -28973,7 +28973,7 @@ GameObject:
   - component: {fileID: 1370526682834435028}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
