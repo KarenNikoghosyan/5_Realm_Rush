@@ -78,10 +78,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684ce90e79015e644b158da417de087a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathParticlePrefab: {fileID: 19821056, guid: 079954accd64b32419ec069129c81273,
+  deathParticlePrefab: {fileID: 19821056, guid: 57c70ebac371a9442917cb178b6e128c,
     type: 3}
   hitParticlePrefab: {fileID: 3633981977068359521}
-  hitPoints: 20
+  hitPoints: 2
 --- !u!1 &1868056735128275815
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,6 +23,7 @@ public class EnemyDamage : MonoBehaviour
     {
         hitPoints--;
         hitParticlePrefab.Play();
+        AudioManager.instance.Play("Enemy Hit SFX");
     }
 
     private void EnemyKill()
@@ -30,6 +31,7 @@ public class EnemyDamage : MonoBehaviour
         ParticleSystem fx = Instantiate(deathParticlePrefab, transform.position, Quaternion.identity);
         fx.transform.parent = GameObject.Find("Spawned On Death").transform;
         fx.Play();
+        AudioManager.instance.Play("Enemy Death SFX");
         Destroy(gameObject);
     }
 }

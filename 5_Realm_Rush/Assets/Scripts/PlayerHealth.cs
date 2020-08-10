@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(other.gameObject.tag == "Enemy")
         {
+            AudioManager.instance.Play("Enemy Hit Base SFX");
             health -= healthDecrease;
             healthText.text = health.ToString();
         }    

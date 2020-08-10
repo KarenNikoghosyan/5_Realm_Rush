@@ -24,6 +24,7 @@ public class EnemySpawner : MonoBehaviour
         while (true)
         {
             AddScore();
+            AudioManager.instance.Play("Spawned Enemy SFX");
             var newEnemy = Instantiate(enemyPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             newEnemy.transform.parent = enemyParentTransform;
             yield return new WaitForSeconds(secondsBetweenSpawns);

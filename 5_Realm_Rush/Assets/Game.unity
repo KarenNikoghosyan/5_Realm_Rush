@@ -5354,7 +5354,7 @@ Transform:
   - {fileID: 514969925}
   - {fileID: 1207423816}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &396737477
 MonoBehaviour:
@@ -15194,7 +15194,7 @@ Transform:
   - {fileID: 876501084}
   - {fileID: 743060300}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1089210424
 GameObject:
@@ -19029,7 +19029,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1431837123
 MonoBehaviour:
@@ -19238,6 +19238,70 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1444176845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444176846}
+  - component: {fileID: 1444176847}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444176846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444176845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1444176847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444176845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eef3ed810b9742419be644fc1bb56e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Spawned Enemy SFX
+    clip: {fileID: 8300000, guid: a8f023335ca3e1a4d8cab80c56d7b0ec, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Enemy Hit SFX
+    clip: {fileID: 8300000, guid: 4a502ad7ec2eef74fa78770b8ecbd9bb, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Enemy Hit Base SFX
+    clip: {fileID: 8300000, guid: 7bc5b6beb3dfdb448ba3caffe280099b, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Enemy Death SFX
+    clip: {fileID: 8300000, guid: b6e89e61ace4909478833061721fc5c5, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1 &1465321321
 GameObject:
   m_ObjectHideFlags: 0
@@ -19266,7 +19330,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1468978309
 PrefabInstance:
@@ -24773,7 +24837,7 @@ RectTransform:
   - {fileID: 1357462842}
   - {fileID: 685753423}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -24994,7 +25058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845827660
 GameObject:
@@ -29179,7 +29243,7 @@ PrefabInstance:
     - target: {fileID: 4857302029029280366, guid: 3d65677d3bba7674a934dff475d4dd5a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4857302029029280366, guid: 3d65677d3bba7674a934dff475d4dd5a,
         type: 3}
@@ -29268,7 +29332,7 @@ PrefabInstance:
     - target: {fileID: 8235966349453789644, guid: 8461546b2338bdc458084ae5f8cb7ae9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8235966349453789644, guid: 8461546b2338bdc458084ae5f8cb7ae9,
         type: 3}
