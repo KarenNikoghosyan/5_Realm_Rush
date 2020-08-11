@@ -63,7 +63,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65febe2cfa1cbc5438c6e471be4ab5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementPeriod: 0.5
+  movementPeriod: 0.6
   goalParticle: {fileID: 198537984209914932, guid: 1a51bfda454239a41afb7dee687c6ac0,
     type: 3}
 --- !u!114 &8603994065696437587
@@ -81,7 +81,7 @@ MonoBehaviour:
   deathParticlePrefab: {fileID: 19821056, guid: 57c70ebac371a9442917cb178b6e128c,
     type: 3}
   hitParticlePrefab: {fileID: 3633981977068359521}
-  hitPoints: 2
+  hitPoints: 15
 --- !u!1 &1868056735128275815
 GameObject:
   m_ObjectHideFlags: 0
