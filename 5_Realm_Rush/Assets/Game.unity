@@ -18998,7 +18998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfa9a3154274b9641aea52663dac34ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  secondsBetweenSpawns: 9
+  secondsBetweenSpawns: 10
   enemyPrefab: {fileID: 7541825387060470074, guid: a28683fd096f72046a37742204ee1ba9,
     type: 3}
   enemyParentTransform: {fileID: 1431837122}
